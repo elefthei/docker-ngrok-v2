@@ -9,4 +9,4 @@ RUN unzip ngrok-stable-linux-amd64.zip -d /bin && \
  touch /.ngrok
 
 # Get HTTP_PORT from environment
-CMD /bin/ngrok http $HTTP_PORT
+CMD /bin/ngrok http $HTTP_SERVER:$HTTP_PORT
